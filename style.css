@@ -9,6 +9,9 @@
     --blue-color: #2c90d0;
     --orange-color: #ef7930;
     --light-yellow-color: #fff1d9;
+    --green-yellow-color: #78b43d;
+    --green-yellow-low-color: #aad862; 
+    --white-color: #fff
 }   
 .clear{
     clear: both;
@@ -444,8 +447,102 @@ footer{
     margin: 0px auto;
     text-align: center;
     font-size: 15px;
-    color: #7d7d7d;
+    color: var(--green-yellow-color);
 }
 .footer3 p, a{
     margin: 15px 0px;
+}
+header{
+    background-color: var(--green-yellow-color);
+    height: 50px;
+}
+header .content{
+    width: 1004px;
+    margin: 0px auto;
+    height: 100%;
+}
+header .content .navbar{
+    display: flex;
+    height: 100%;
+}
+header .content .navbar .logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+}
+header .content .navbar .menu{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px var(--white-color) solid;
+    border-right: 1px var(--white-color) solid;
+    margin: 0px 5px;
+    position: relative;
+}
+header .content .navbar .menu-detail{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+}
+header .content .navbar .search{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px var(--white-color) solid;
+    border-right: 1px var(--white-color) solid;
+    margin: 0px 5px;
+}
+.logo{
+    height: 100%;
+}
+.menu-item{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 5px;
+}
+header .content .navbar .menu .menu-dropdown{
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: -113px;
+}
+header .content .navbar .menu .menu-dropdown .menu-dropdown-item{
+    display: none;
+    width: 180px;
+    height: 30px;
+    margin-right: -181px;
+    background: var(--green-yellow-low-color);
+    border-bottom: var(--green-yellow-color) solid 1px;
+    color: #000;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0px 15px;
+    align-items: center;
+}
+header .content .navbar .menu .menu-dropdown .menu-dropdown-item i{
+    margin-right: 10px;
+    color: var(--white-color);
+}
+header .content .navbar .menu:hover .menu-dropdown-item{
+    display: flex;
+}
+header .content .navbar .menu .menu-dropdown .menu-dropdown-item .menu-dropdown-item-child{
+    display: none;
+    position: absolute;
+    left: 210px;
+    top: 0px;
+}
+header .content .navbar .menu .menu-dropdown .menu-dropdown-item:hover .menu-dropdown-item-child{
+    display: block;
 }
