@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+:root {
+    --yellow-color: #e3b014;
+    --green-color: #08b089;
+    --blue-color: #2c90d0;
+    --orange-color: #ef7930;
+    --light-yellow-color: #fff1d9;
+    --green-yellow-color: #78b43d;
+    --green-yellow-low-color: #aad862; 
+    --white-color: #fff;
+}   
+.container{
+    width: 500px;
+    margin: 0px auto;
+}
+.header{
+    background-color: var(--green-yellow-color);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.body{
+    width: 100%;
+}
+.container{
+    border: 3px var(--green-yellow-color) solid;
+}
+table{
+    width: 100%;
+}
+table tr td:first-child{
+    width: 30%;
+    text-align: end;
+    padding: 5px 10px;
+}
+table tr td:last-child{
+    width: 70%;
+    text-align: start;
+    padding: 5px 10px;
+}
+table tr td label{
+    width: 100%;
+}
+table tr td input{
+    border: 1px lightslategray solid;
+}
+table tr:nth-child(4) td input, tr:nth-child(5) td input{
+    width: 330px;
+}
+table tr td textarea{
+    border: 1px lightslategray solid;
+    width: 330px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+.submit{
+    background-color: var(--green-yellow-color);
+    margin-right: 5px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: var(--white-color);
+}
+.exit{
+    background-color: #787b83;
+    background-image: linear-gradient(to bottom,#787b83 0,#44474e 100%);
+    padding: 6px 20px;
+    border-radius: 3px;
+    color: var(--white-color);
+}
+.footer{
+    width: 480px;
+    border-top: 1px #e5e5e5 dashed;
+    padding-top: 10px;
+    margin: 10px auto;
+}
+.footer p{
+    padding: 10px;
+    font-size: 13px;
+    background-color: #e6e6e6;
+}
